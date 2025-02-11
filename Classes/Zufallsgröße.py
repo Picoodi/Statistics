@@ -58,7 +58,7 @@ class Zufallsgröße():
 
         plt.figure()
         plt.step(x,F, where= "post", color= "red")
-        plt.scatter(x,F, color ="red", s= 100)
+        plt.scatter(x,F, color ="red", s= 5)
         plt.get_current_fig_manager().set_window_title("Treppenfunktion T("+self.Name+")")
         plt.title("Treppenfunktion T("+self.Name+")")
         plt.xlabel("xi")
