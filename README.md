@@ -5,17 +5,17 @@ This codebase contains classes for random variables and the binominal distributi
 Here are the best translations for the german words i could find.
 
  
-Binominalverteilung -> Binominal distribution
-Erwartngswert -> Expected value
-Histogramm -> Histogram   
-kumulative Wahrscheinlichkeitsverteilung -> Cumulative Probability distribution  
-Stabdiagramm -> Bar diagram
-Standardabweichung -> Standard deviation     
-Tabelle ->Table  
-Treppenfunktion -> Staircase function 
-Varianz -> Variance   
-Wahrscheinlichkeitsverteilung -> Probability distribution 
-Zufallsgröße -> RandomVariables 
+Binominalverteilung -> Binominal distribution  
+Erwartngswert -> Expected value  
+Histogramm -> Histogram     
+kumulative Wahrscheinlichkeitsverteilung -> Cumulative Probability distribution    
+Stabdiagramm -> Bar diagram  
+Standardabweichung -> Standard deviation       
+Tabelle ->Table    
+Treppenfunktion -> Staircase function   
+Varianz -> Variance     
+Wahrscheinlichkeitsverteilung -> Probability distribution   
+Zufallsgröße -> RandomVariables   
 
 # Needed Libraries 
 Check that you have the following librairies installed. They are needed for the mathematics and valuable and good looking outputs.
