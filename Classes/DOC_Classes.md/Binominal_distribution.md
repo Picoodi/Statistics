@@ -11,7 +11,7 @@ class Binominalverteilung():
 ```
 
 ## Wahrscheinlichkeitsverteilung -> Probability distribution 
-With the binominal coefficient $$P(X=k) = \binom{n}{k} \cdot p^k \cdot (1-p)^{n-k}$$ we can calculate the probability for each k.
+With the binomial coefficient $$P(X=k) = \binom{n}{k} \cdot p^k \cdot (1-p)^{n-k}$$ we can calculate the probability for each k.
 
 ```python
 def Wahrscheinlichkeitsverteilung(self):
