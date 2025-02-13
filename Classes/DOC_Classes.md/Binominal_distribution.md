@@ -38,3 +38,14 @@ def kumulative_Verteilungsfunktion(self):
             kWF.append(sum)
         return kWF
 ```
+## RangeProbability
+Just like the name says this function lets the user calculate the prbability in a specific range the user wants to
+```python
+def RangeProbability(self,Start, End):
+        i = Start
+        sum = 0
+        while i <= End: #caclulating the probabilities and adding them each time to the whole sum
+            sum = sum + self.Wahrscheinlichkeitsverteilung()[i] 
+            i = i+1
+        return sum
+```
