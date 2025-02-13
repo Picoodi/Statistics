@@ -69,7 +69,21 @@ class Binominalverteilung():
     
         
         
+    def Tabelle(self):
+        table = PrettyTable()
+        x = []
+        i = 0
+        while i <= self.n:
+            x.append(i)
+            i = i+1
 
+        table.field_names = ["Was","Werte"]
+        table.add_row(["xi", x])
+        table.add_row(["P("+self.name+"= xi)", self.Wahrscheinlichkeitsverteilung()])
+        table.add_row(["P("+ self.name+" <= xi)", self.kumulative_Verteilungsfunktion()])
+
+        print("Tabelle für die Zufallsgröße "+ self.name)
+        print(table)
 
 
     def RangeProbability(self,Start, End):
