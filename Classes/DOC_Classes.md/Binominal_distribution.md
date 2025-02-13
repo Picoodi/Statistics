@@ -40,7 +40,7 @@ def kumulative_Verteilungsfunktion(self):
 ```
 ## RangeProbability
 Just like the name says this function lets the user calculate the prbability in a specific range the user wants to
-```
+```python
 def RangeProbability(self,Start, End):
         i = Start
         sum = 0
@@ -48,4 +48,4 @@ def RangeProbability(self,Start, End):
             sum = sum + self.Wahrscheinlichkeitsverteilung()[i] 
             i = i+1
         return sum
-```pythin
+```
