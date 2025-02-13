@@ -86,4 +86,13 @@ class Binominalverteilung():
         print(table)
 
 
+    def RangeProbability(self,Start, End):
+        i = Start
+        sum = 0
+        while i <= End:
+            sum = sum + self.Wahrscheinlichkeitsverteilung()[i]
+            i = i+1
+        return sum
+
+
 
