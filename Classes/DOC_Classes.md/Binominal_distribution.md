@@ -49,3 +49,17 @@ def RangeProbability(self,Start, End):
             i = i+1
         return sum
 ```
+
+
+## Erwartungswert, Varianz and Standardabweichung
+These little functions of the class return the simple math behind it in one line of code in each function 
+```python
+    def Erwartungswert(self):
+        return self.n * self.p #n * p
+
+    def Varianz(self):
+        return self.n * self.p * (1- self.p) # n*p*(1-p)
+
+    def Standardabweichung(self):
+        return sqrt(self.Varianz()) # Square root of the Varianz
+```
