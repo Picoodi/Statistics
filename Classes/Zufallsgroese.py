@@ -1,4 +1,9 @@
-class Zufallsgröße():
+import matplotlib.pyplot as plt
+from math import sqrt
+from prettytable import PrettyTable
+
+
+class Zufallsgroese():
 
     def __init__(self, Name, WerteZG, WSKWerteZG):
         self.Name = Name
@@ -6,7 +11,7 @@ class Zufallsgröße():
         self.Pxi = WSKWerteZG
 
 
-    def WerteZufallsgröße(self):
+    def WerteZufallsgroese(self):
         return(self.xi)
 
 
@@ -105,3 +110,5 @@ class Zufallsgröße():
 
         print("Tabelle für die Zufallsgröße "+ self.Name)
         print(table)
+
+
