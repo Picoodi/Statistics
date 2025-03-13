@@ -115,5 +115,3 @@ class Binominalverteilung():
 
 
 
-X = Binominalverteilung("X", 5, 0.35)
-X.Tabelle()
