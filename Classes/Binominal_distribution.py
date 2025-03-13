@@ -1,3 +1,9 @@
+import matplotlib.pyplot as plt
+from math import sqrt, factorial
+from prettytable import PrettyTable
+from binarytree import build
+
+
 class Binominalverteilung():
     def __init__(self,name,n,p):
         self.name = name
@@ -81,6 +87,9 @@ class Binominalverteilung():
         table.add_row(["xi", x])
         table.add_row(["P("+self.name+"= xi)", self.Wahrscheinlichkeitsverteilung()])
         table.add_row(["P("+ self.name+" <= xi)", self.kumulative_Verteilungsfunktion()])
+        table.add_row(["E(" + self.name + ")", self.Erwartungswert()])
+        table.add_row(["Var(" + self.name + ")", self.Varianz()])
+        table.add_row(["{sigma}", self.Standardabweichung()])
 
         print("Tabelle für die Zufallsgröße "+ self.name)
         print(table)
@@ -95,4 +104,16 @@ class Binominalverteilung():
         return sum
 
 
+    def Erwartungswert(self):
+        return self.n * self.p
 
+    def Varianz(self):
+        return self.n * self.p * (1- self.p)
+
+    def Standardabweichung(self):
+        return sqrt(self.Varianz())
+
+
+
+X = Binominalverteilung("X", 5, 0.35)
+X.Tabelle()
